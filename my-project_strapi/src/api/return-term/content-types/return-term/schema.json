@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "return_terms",
+  "info": {
+    "singularName": "return-term",
+    "pluralName": "return-terms",
+    "displayName": "ReturnTerm"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "fulfillment_state": {
+      "type": "string"
+    },
+    "return_eligible": {
+      "type": "boolean"
+    },
+    "return_within": {
+      "type": "string"
+    },
+    "fulfillment_managed_by": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "providers",
+  "info": {
+    "singularName": "provider",
+    "pluralName": "providers",
+    "displayName": "provider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "domain": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "short_desc": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "long_desc": {
+      "type": "text"
+    },
+    "image": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-media.item-media"
+    },
+    "media": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item-media.item-media"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "rating": {
+      "type": "string"
+    },
+    "payment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::payment.payment"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item"
+    },
+    "rateable": {
+      "type": "boolean"
+    },
+    "tag_groups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-group.tag-group"
+    },
+    "time": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::timer.timer"
+    },
+    "provider_id": {
+      "type": "string"
+    },
+    "fulfillments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fulfillment.fulfillment"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "payment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "bank_code": {
+      "type": "string"
+    },
+    "bank_account_number": {
+      "type": "string"
+    },
+    "virtual_payment_address": {
+      "type": "string"
+    },
+    "source_bank_code": {
+      "type": "string"
+    },
+    "source_bank_account_number": {
+      "type": "string"
+    },
+    "source_virtual_payment_address": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "time": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::timer.timer"
+    }
+  }
+}

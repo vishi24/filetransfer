@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "refund_terms",
+  "info": {
+    "singularName": "refund-term",
+    "pluralName": "refund-terms",
+    "displayName": "RefundTerm",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "refund_eligible": {
+      "type": "boolean",
+      "default": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "fulfillment_state": {
+      "type": "string"
+    },
+    "refund_within": {
+      "type": "string"
+    }
+  }
+}

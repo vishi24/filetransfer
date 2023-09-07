@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "creator": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::organization.organization"
+    },
+    "price": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::price.price"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location"
+    },
+    "rateable": {
+      "type": "boolean",
+      "default": true
+    },
+    "quantity_available": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "tag_groups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag-group.tag-group"
+    },
+    "short_desc": {
+      "type": "string"
+    },
+    "long_desc": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "item_image": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item-media.item-media"
+    },
+    "media": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-media.item-media"
+    },
+    "maximum_quantity": {
+      "type": "integer"
+    },
+    "minimum_quantity": {
+      "type": "integer"
+    },
+    "payment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::payment.payment"
+    },
+    "cancellation_terms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cancellation-term.cancellation-term"
+    },
+    "refund_terms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::refund-term.refund-term"
+    },
+    "replacement_terms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::replacement-term.replacement-term"
+    },
+    "return_terms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::return-term.return-term"
+    },
+    "cancellation_fee": {
+      "type": "string"
+    },
+    "refund_amount": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "parent_item_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    },
+    "item_attributes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item-attribute.item-attribute"
+    },
+    "name": {
+      "type": "string"
+    },
+    "fulfillment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fulfillment.fulfillment"
+    }
+  }
+}

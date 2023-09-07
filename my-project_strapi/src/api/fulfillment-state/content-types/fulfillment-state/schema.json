@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fulfillment_states",
+  "info": {
+    "singularName": "fulfillment-state",
+    "pluralName": "fulfillment-states",
+    "displayName": "FulfillmentState",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

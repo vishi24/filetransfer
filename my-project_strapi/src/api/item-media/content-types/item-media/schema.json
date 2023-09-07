@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_medias",
+  "info": {
+    "singularName": "item-media",
+    "pluralName": "item-medias",
+    "displayName": "Media",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_url": {
+      "type": "string"
+    },
+    "size_type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

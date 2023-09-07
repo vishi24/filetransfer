@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizations",
+  "info": {
+    "singularName": "organization",
+    "pluralName": "organizations",
+    "displayName": "Organization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Address": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "city_code": {
+      "type": "string"
+    },
+    "state_code": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "media": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-media.item-media"
+    },
+    "images": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-media.item-media"
+    }
+  }
+}
